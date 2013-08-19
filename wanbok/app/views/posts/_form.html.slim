@@ -1,0 +1,11 @@
+= simple_form_for(@post) do |f|
+  = f.error_notification
+
+  .inputs
+    = f.input :user_id, as: :hidden, input_html: { value: current_user.try(:id) }
+    = f.input :title
+    = f.input :description
+    = f.file_field :photo
+
+  .actions
+    = f.button :submit
