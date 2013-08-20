@@ -1,5 +1,7 @@
 == README
 
+주석이 왜 이렇게 달리는 건지 ㅜ.ㅜ
+
 This README would normally document whatever steps are necessary to get the
 application up and running.
 
