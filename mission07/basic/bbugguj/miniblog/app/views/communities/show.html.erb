@@ -1,0 +1,20 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  == <strong><%= @community.name %></strong> Community ==
+  
+</p>
+
+<%= render 'postform' %>
+
+<% @community.posts.reverse.each do |post| %>
+	<% unless post.user.nil? %>
+	<p>
+	  <strong><%= post.title %></strong>  (<%= post.user.email %>)
+	</p>
+	<p>
+	  <%= post.text %>
+	</p>
+	<% end %>
+	<br>
+<% end %>

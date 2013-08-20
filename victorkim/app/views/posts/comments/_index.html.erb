@@ -1,0 +1,13 @@
+<% if comments.length > 1 %>
+	<table class="table table-bordered">
+	<% comments.each do |comment|  %>
+		<% if comment.desc.present? %>
+			<tr>
+				<td><%= comment.user.try(:email) %></td>
+				<td><%= comment.desc %></td>
+				<td><%= comment.created_at.try(:strftime, '%Y.%m.%d') %></td>
+			</tr>
+		<% end %>
+	<% end %>
+	</table>
+<% end %>
