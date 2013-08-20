@@ -1,0 +1,38 @@
+<p id="notice"><%= notice %></p>
+
+<h1><%= @topic.name %></h1>
+<hr>
+<p>
+  <%= @topic.contents %>
+</p>
+
+<%= link_to 'Edit', edit_topic_path(@topic) %> |
+<%= link_to 'Back', topics_path %>
+
+<p>
+  <%= form_for(@comment_new) do |f| %>
+  <input type="hidden" name="comment[topic_id]" value="<%= @topic.id %>" />
+  <div class="field">
+    <%= f.label :name %><br />
+    <%= f.text_field :name %>
+  </div>
+  <div class="field">
+    <%= f.label :contents %><br />
+    <%= f.text_field :contents %>
+  </div>
+  <div class="actions">
+    <%= f.submit %>
+  </div>
+<% end %>
+</p>
+
+<p>
+  <strong>Comments</strong>
+    <ul style="list-style-type: none;">
+      <% @comments.each do |comment| %>
+        <li><%= comment.name %>: <strong><%= comment.contents %></strong> <%= comment.created_at %>
+          <%= link_to "Edit", edit_comment_path(comment) %>
+          <%= link_to 'Destroy', comment, method: :delete, data: { confirm: 'Are you sure?' } %></li>
+      <% end %>
+    </ul>
+</p>
