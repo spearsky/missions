@@ -4,7 +4,12 @@ class CommunitiesController < ApplicationController
 
   def join
     community = Community.find(params[:community_id])
-    role = Role.new :user => current_user, :community => community
+    roles = Role.where :user => current_user, :community => community
+    
+    if roles.count == 0
+      role = Role.create :user => current_user, :community => community
+    end
+    
     redirect_to root_path
   end
 

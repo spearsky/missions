@@ -38,7 +38,7 @@ class PostsController < ApplicationController
     @post.user = current_user        
 
     if @post.save
-      redirect_to root_path
+      redirect_to community_path @community
     else
       render action: 'new'
     end

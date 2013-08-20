@@ -2,12 +2,13 @@
 	<div class="span8">
 	<% @posts.reverse.each do |post| %>		
 		<p>
-		  <strong><%= post.title %></strong>  (<%= post.user.email %>)
+		  [<%= post.community.name %>]<strong><%= post.title %></strong>  (<%= post.user.email %>)
 		</p>
 		<p>
 		  <%= post.text %>
-		</p>		
-	<% end %>
+		</p>
+		<br>		
+	<% end %>	
 	</div>
 	<div class="span4">
 
