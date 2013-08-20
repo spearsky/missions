@@ -1,0 +1,9 @@
+%h1 User List
+.js-masonry{"data-masonry-options" => '{ "itemSelector": ".item", "columnWidth": 210 }'}
+  - @users.each do |user|
+    .text-center.item{style: "width:180px; padding: 20px; margin: 15px; border: 1px solid #fafafa;"}
+      = link_to gravatar_image_for_profile(user), user_path(user)
+      %br/
+      %br/
+      = link_to user.email.split("@")[0], user_path(user)
+
