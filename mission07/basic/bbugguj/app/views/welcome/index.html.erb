@@ -1,0 +1,24 @@
+<% unless current_user.nil? %>
+	<div class="span8">
+	<% @posts.reverse.each do |post| %>		
+		<p>
+		  <strong><%= post.title %></strong>  (<%= post.user.email %>)
+		</p>
+		<p>
+		  <%= post.text %>
+		</p>		
+	<% end %>
+	</div>
+	<div class="span4">
+
+		<div class="well sidebar-nav"class="well sidebar-nav">          
+	      <ul class="nav nav-list">
+	        <li class="nav-header">All Communities</li>                
+	          <% @communities.each do |community| %>
+	            <li><%= link_to "#{community.name} (join)", "communities/#{community.id}/join", :method => :post %></li>
+	          <% end %>                   
+	      </ul>
+	    </div>
+
+	</div>
+<% end %>
