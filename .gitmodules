@@ -3,4 +3,4 @@
 	url = https://github.com/junheon/dev.study.mission07.git
 [submodule "mission07/basic/majestin"]
 	path = mission07/basic/majestin
-	url = git@github.com:Majestin/post_comment.git
+	url = https://github.com/Majestin/post_comment.git
