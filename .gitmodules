@@ -1,3 +1,12 @@
 [submodule "mission07/expert/junheon"]
 	path = mission07/expert/junheon
-	url = git@github.com:junheon/dev.study.mission07.git
+	url = https://github.com/junheon/dev.study.mission07.git
+[submodule "mission07/basic/majestin"]
+	path = mission07/basic/majestin
+	url = https://github.com/Majestin/post_comment.git
+[submodule "mission07/expert/nacyot"]
+	path = mission07/expert/nacyot
+	url = git@github.com:nacyot/stub
+[submodule "test-submodule"]
+	path = test-submodule
+	url = git@github.com:junheon/test-gitsubmodule.git
