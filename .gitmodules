@@ -6,7 +6,10 @@
 	url = https://github.com/Majestin/post_comment.git
 [submodule "mission07/expert/nacyot"]
 	path = mission07/expert/nacyot
-	url = git@github.com:nacyot/stub
+	url = https://github.com/nacyot/stub
 [submodule "test-submodule"]
 	path = test-submodule
 	url = git@github.com:junheon/test-gitsubmodule.git
+[submodule "mission07/expert/wanbok"]
+	path = mission07/expert/wanbok
+	url = https://github.com/wanbok/copy-pint-ui
