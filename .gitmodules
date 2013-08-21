@@ -7,3 +7,6 @@
 [submodule "mission07/expert/nacyot"]
 	path = mission07/expert/nacyot
 	url = git@github.com:nacyot/stub
+[submodule "test-submodule"]
+	path = test-submodule
+	url = git@github.com:junheon/test-gitsubmodule.git
