@@ -1,1 +1,0 @@
-This project is a Copycat project for [Seungjun Kim's Live Coding](https://www.youtube.com/watch?v=5yP9Se1M1ZE)
