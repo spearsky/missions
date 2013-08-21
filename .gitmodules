@@ -4,3 +4,6 @@
 [submodule "mission07/basic/majestin"]
 	path = mission07/basic/majestin
 	url = https://github.com/Majestin/post_comment.git
+[submodule "mission07/expert/nacyot"]
+	path = mission07/expert/nacyot
+	url = git@github.com:nacyot/stub
